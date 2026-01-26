@@ -5,6 +5,7 @@ body {
 .continer {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+
   gap: 5px;
   /* margin: 4rem;
   padding: 2rem; */
@@ -12,7 +13,6 @@ body {
 
 header {
   background-image: url("https://gridbyexample.com/img/inflicted.png");
-
   border: 2px solid;
   justify-content: right;
 }
