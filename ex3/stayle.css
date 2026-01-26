@@ -1,0 +1,146 @@
+body {
+  background-color: #f4f4f4;
+}
+.parent {
+  display: grid;
+  grid-template-areas:
+    ". nav nav nav nav ."
+    ". aside main main main ."
+    ". aside main main main ."
+    ". footer footer footer footer .";
+  grid-template-rows: 100px 350px 350px 100px;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 5px;
+  gap: 1rem;
+}
+
+.nav {
+  border: 2px solid;
+  grid-area: nav;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  padding: 1rem;
+
+  color: white;
+  border-radius: 10px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.aside {
+  border: 2px solid;
+  grid-area: aside;
+  background-color: #34495e;
+  border-radius: 10px;
+}
+
+.aside h1 {
+  margin-left: 2rem;
+  color: white;
+}
+.colum {
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  padding: 1rem;
+}
+
+.colum a {
+  margin: 1rem;
+  /* border: 2px solid; */
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+  background-color: white;
+  grid-area: main;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.main article {
+  padding: 0.5rem;
+}
+
+.main article h2 {
+  color: #3498db;
+}
+
+.footer {
+  background-color: #2c3e50;
+  border: 2px solid;
+  grid-area: footer;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.contiiner {
+  border: 2px solid;
+  display: grid;
+  
+  grid-template-rows: 80px 140px 180px 80px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+}
+
+.box-1 {
+  grid-column: 2/6;
+  border: 2px solid;
+  background-color: #34495e;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+  color: white;
+}
+.box-1 div a{
+    color: white;
+  text-decoration: none;
+    margin: 1rem;
+}
+
+
+.box-2 {
+  border: 2px solid;
+   grid-column: 2/6;
+    padding: 1rem;
+  border-radius: 15px;
+}
+
+.box-3 {
+  border: 2px solid;
+   grid-column: 2/4;
+
+}
+.box-4 {
+  border: 2px solid;
+}
+.box-5 {
+  border: 2px solid;
+}
+.box-6 {
+  border: 2px solid;
+}
+.box-7 {
+  border: 2px solid;
+}
+.box-8 {
+  border: 2px solid;
+}
+.box-9 {
+  border: 2px solid;
+}
+.box-10 {
+  border: 2px solid;
+}
