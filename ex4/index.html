@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent">
+      <nav class="nav">
+        <h1>CSS Grid Learning</h1>
+        <span></span>
+        <div>
+          <a href="./index.html">Home</a>
+          <a href="img.html">Gallery</a>
+        </div>
+      </nav>
+
+      <aside class="aside">
+        <h1>Menu</h1>
+
+        <div class="colum">
+          <a href="#">Getting Started</a>
+          <a href="#">Grid Basics</a>
+          <a href="#">Grid Properties</a>
+          <a href="#">Examples</a>
+        </div>
+      </aside>
+
+      <main class="main">
+        <article>
+          <h1>Contact Form with Pseudo Selectors</h1>
+          <p>
+            This form demonstrates various CSS pseudo selectors: :hover,
+            :active, :focus, and :nth-child.
+          </p>
+        </article>
+
+        <form
+          action="https://httpbin.org/post"
+          method="POST"
+          
+        >
+          <div class="form-example">
+            <label for="Full Name">Full Name: </label>
+            <input
+              type="text"
+              name="Full Name"
+              id="Full Name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-example">
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your.email@example.com"
+              required
+            />
+          </div>
+          <div class="form-example">
+            <label for="Phone Number">Phone Number: </label>
+            <input
+              type="number"
+              name="Phone Number"
+              id="Phone Number"
+              placeholder="(123)456-7890"
+              required
+            />
+          </div>
+
+          <div class="form-example div4">
+            <label for="Subject">Subject: </label>
+            <input
+              type="text"
+              name="Subject"
+              id="Subject"
+              placeholder="What is this about"
+              required
+            />
+          </div>
+          <div class="form-example div5">
+            <label for="Message">Message: </label>
+            <textarea
+              name="text"
+              id="Message"
+              placeholder="Type your message here..."
+            ></textarea>
+          </div>
+
+          <div class="form-example div6">
+            <label for="Priority Level">Priority Level:</label>
+            <select name="Low" id="Low">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+              <option value="Urgent">Urgent</option>
+            </select>
+          </div>
+          <div class="form-example2">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            <label for="vehicle1">Subscribe to newsletter</label><br />
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+            <label for="vehicle2">I agree to terms and conditions</label><br />
+          </div>
+          <div class="form-exampl">
+             <input type="submit" value="Submit" disabled/>
+            <input type="reset" value="Reset" class="reset"/>
+           
+          </div>
+        </form>
+      </main>
+
+      <footer class="footer">
+        <p>© 2024 CSS Grid Exercise | Learning Resource for Students</p>
+      </footer>
+    </div>
+  </body>
+</html>
