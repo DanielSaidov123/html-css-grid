@@ -254,9 +254,7 @@ img {
   #screen-size::after {
     content: "Desktop";
   }
-  body {
-    padding: 0 10rem 0 10rem;
-  }
+ 
   main {
     width: 100%;
   }
@@ -267,9 +265,7 @@ img {
   #screen-size::after {
     content: "Tablet";
   }
-  body {
-    padding: 0 5rem 0 5rem;
-  }
+ 
   .wrapper {
     flex-direction: row;
   }
@@ -310,7 +306,5 @@ img {
   .aside{
     display: none;
   }
-    body {
-    padding: 0rem;
-  }
+ 
 }
