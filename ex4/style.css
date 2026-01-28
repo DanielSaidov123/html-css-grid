@@ -134,6 +134,7 @@ nav a:active {
   text-align: center;
   color: white;
   font-size: 1.2rem;
+  margin-top:1rem ;
 }
 select {
   padding: 1rem;
@@ -237,7 +238,112 @@ img {
   border: 2px solid;
 }
 
- 
+.animationDiv {
+  margin-top: 1rem;
+  display: grid;
+  border: 2px solid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 300px;
+  gap: 1rem;
+}
+
+.all {
+  border-radius: 10px;
+  
+  text-align: center;
+  border: 2px solid;
+}
+
+.all p {
+  border: 2px solid;
+  width: 30%;
+  height: 30%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  
+}
+
+.x {
+  background-image: linear-gradient(
+    135deg,
+    rgb(102, 126, 234) 0%,
+    rgb(118, 75, 162) 100%
+  );
+}
+
+.y {
+  background-image: linear-gradient(
+    135deg,
+    rgb(240, 147, 251) 0%,
+    rgb(245, 87, 108) 100%
+  );
+}
+.z {
+  background-image: linear-gradient(
+    135deg,
+    rgb(79, 172, 254) 0%,
+    rgb(0, 242, 254) 100%
+  );
+}
+
+/* .x:hover{
+  transform: scale(2, 2);
+  transition: 0.5s ease-out;
+} */
+
+
+@keyframes moveRight {
+  0%{
+    transform: scale(1);
+  }
+  
+  45% {
+    transform: scale(0.8);
+  }
+}
+
+.x {
+  animation: moveRight 2s infinite linear;
+}
+
+
+
+@keyframes daniel {
+  0%{
+    transform: translate(0, 10px);
+  }
+  
+  50% {
+    transform: translate(0, 30px);
+  }
+}
+
+.y {
+  animation: daniel 1s infinite linear;
+}
+
+@keyframes ff {
+  0%{
+    transform: rotate(0 );
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.z {
+  animation: ff 1s  infinite linear;
+}
+
+
+
+
+
+
 /* Large Desktop / */
 @media (min-width: 1441px) {
   #screen-size::after {
@@ -245,7 +351,7 @@ img {
   }
 
   main {
-    width: 60rem;
+    width: 100%;
   }
 }
 
@@ -254,7 +360,10 @@ img {
   #screen-size::after {
     content: "Desktop";
   }
- 
+  .animationDiv{
+  grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
   main {
     width: 100%;
   }
@@ -265,15 +374,15 @@ img {
   #screen-size::after {
     content: "Tablet";
   }
- 
+
   .wrapper {
     flex-direction: row;
   }
-   .contiiner {
+  .contiiner {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
-   .contiiner div {
+  .contiiner div {
     grid-column: auto;
     grid-row: auto;
   }
@@ -301,10 +410,9 @@ img {
     grid-template-areas:
       " nav"
       " main"
-      " footer "
+      " footer ";
   }
-  .aside{
+  .aside {
     display: none;
   }
- 
 }
